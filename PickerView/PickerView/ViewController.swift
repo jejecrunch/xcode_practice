@@ -11,6 +11,7 @@ import UIKit
 class ViewController: UIViewController, UIPickerViewDelegate {
     let MAX_ARRAY_NUM = 3
     let PICKER_VIEW_COLUMN = 1
+    let PICKER_VIEW_HEIGHT: CGFloat = 80
     var imageArray = [UIImage?]()
     var imageFileName = ["01.png", "02.png", "03.png"]
     
@@ -40,6 +41,10 @@ class ViewController: UIViewController, UIPickerViewDelegate {
 
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return PICKER_VIEW_COLUMN
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, rowHeightForComponent component: Int) -> CGFloat {
+        return PICKER_VIEW_HEIGHT
     }
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
