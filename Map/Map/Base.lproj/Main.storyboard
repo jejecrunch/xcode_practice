@@ -21,13 +21,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="n5n-l4-BYY">
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" apportionsSegmentWidthsByContent="YES" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="n5n-l4-BYY">
                                 <rect key="frame" x="16" y="41" width="343" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <segments>
                                     <segment title="현재 위치"/>
                                     <segment title="성공회대학교"/>
                                     <segment title="네이버 본사"/>
+                                    <segment title="다음 본사"/>
                                 </segments>
                                 <connections>
                                     <action selector="sgChangeLocation:" destination="BYZ-38-t0r" eventType="valueChanged" id="bFT-GJ-gm0"/>

@@ -99,6 +99,13 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
             setAnnotation(latitude: 37.359519817866826, longitude: 127.10497698325682, delta: 1, title: "네이버 본사", subtitle: "경기도 성남시 분당구 불정로 6")
             self.lblLocationInfo1.text = "보고 계신 위치"
             self.lblLocationInfo2.text = "네이버 본사"
+        } else if sender.selectedSegmentIndex == 3 {
+            // 다음 본사 표시
+            //33.450565560620475
+            //126.57067263360018
+            setAnnotation(latitude: 33.450565560620475, longitude: 126.57067263360018, delta: 1, title: "다음 본사", subtitle: "제주특별자치도 제주시 첨단로 242")
+            self.lblLocationInfo1.text = "보고 계신 위치"
+            self.lblLocationInfo2.text = "다음 본사"
         }
         
         
