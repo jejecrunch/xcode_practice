@@ -99,6 +99,14 @@
                                     <action selector="swImageOnOff:" destination="Pyg-cz-I6s" eventType="valueChanged" id="Vdp-h6-0v6"/>
                                 </connections>
                             </switch>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="V1P-f2-ocb">
+                                <rect key="frame" x="24" y="137" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="확대"/>
+                                <connections>
+                                    <action selector="btnResizeImage:" destination="Pyg-cz-I6s" eventType="touchUpInside" id="un3-Zy-Wd9"/>
+                                </connections>
+                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="message" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="UoK-I1-4ws">
                                 <rect key="frame" x="16" y="210" width="69" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -124,6 +132,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="btnResize" destination="V1P-f2-ocb" id="sc7-M8-hEh"/>
                         <outlet property="lblWay" destination="Cav-k1-qKI" id="mVM-dT-jhK"/>
                         <outlet property="swIsOn" destination="nUa-9p-rtA" id="Pih-rR-huY"/>
                         <outlet property="txtMessage" destination="dLB-Ne-cdq" id="Ayy-5t-qsy"/>
