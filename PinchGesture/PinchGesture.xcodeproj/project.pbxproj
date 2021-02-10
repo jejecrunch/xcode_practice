@@ -12,6 +12,7 @@
 		CE09D06125D3ADB6002C0F1B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE09D05F25D3ADB6002C0F1B /* Main.storyboard */; };
 		CE09D06325D3ADB6002C0F1B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE09D06225D3ADB6002C0F1B /* Assets.xcassets */; };
 		CE09D06625D3ADB6002C0F1B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE09D06425D3ADB6002C0F1B /* LaunchScreen.storyboard */; };
+		CE09D06E25D3AFC6002C0F1B /* img-06.png in Resources */ = {isa = PBXBuildFile; fileRef = CE09D06D25D3AFC6002C0F1B /* img-06.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		CE09D06225D3ADB6002C0F1B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE09D06525D3ADB6002C0F1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE09D06725D3ADB6002C0F1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE09D06D25D3AFC6002C0F1B /* img-06.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img-06.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 		CE09D05A25D3ADB6002C0F1B /* PinchGesture */ = {
 			isa = PBXGroup;
 			children = (
+				CE09D06D25D3AFC6002C0F1B /* img-06.png */,
 				CE09D05B25D3ADB6002C0F1B /* AppDelegate.swift */,
 				CE09D05D25D3ADB6002C0F1B /* ViewController.swift */,
 				CE09D05F25D3ADB6002C0F1B /* Main.storyboard */,
@@ -124,6 +127,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE09D06625D3ADB6002C0F1B /* LaunchScreen.storyboard in Resources */,
+				CE09D06E25D3AFC6002C0F1B /* img-06.png in Resources */,
 				CE09D06325D3ADB6002C0F1B /* Assets.xcassets in Resources */,
 				CE09D06125D3ADB6002C0F1B /* Main.storyboard in Resources */,
 			);

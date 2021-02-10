@@ -10,7 +10,8 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var txtPinch: UILabel!
+    
+    @IBOutlet weak var imgPinch: UIImageView!
     
     var initialFontSize: CGFloat!
     
@@ -23,11 +24,8 @@ class ViewController: UIViewController {
     }
 
     func doPinch(_ pinch: UIPinchGestureRecognizer) {
-        if (pinch.state == UIGestureRecognizerState.began) {
-            initialFontSize = txtPinch.font.pointSize
-        } else {
-            txtPinch.font = txtPinch.font.withSize(initialFontSize*pinch.scale)
-        }
+        imgPinch.transform = imgPinch.transform.scaledBy(x: pinch.scale, y: pinch.scale)
+        pinch.scale = 1
     }
 
 }
