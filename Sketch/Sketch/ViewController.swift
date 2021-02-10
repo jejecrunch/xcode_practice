@@ -12,12 +12,17 @@ class ViewController: UIViewController {
     @IBOutlet weak var imgView: UIImageView!
     
     var lastPoint: CGPoint!
+    
+    @IBOutlet weak var txtLineSize: UITextField!
+   
     var lineSize: CGFloat = 2.0
     var lineColor = UIColor.red.cgColor
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        txtLineSize.text = String(Int(lineSize))
     }
 
     override func didReceiveMemoryWarning() {
@@ -77,6 +82,33 @@ class ViewController: UIViewController {
         if motion == .motionShake {
             imgView.image = nil
         }
+    }
+    
+    @IBAction func btnChangeBlack(_ sender: UIButton) {
+        lineColor = UIColor.black.cgColor
+    }
+    
+    @IBAction func btnChangeRed(_ sender: UIButton) {
+        lineColor = UIColor.red.cgColor    }
+    
+    @IBAction func btnChangeGreen(_ sender: UIButton) {
+        lineColor = UIColor.green.cgColor
+    }
+    
+    @IBAction func btnChangeBlue(_ sender: UIButton) {
+        lineColor = UIColor.blue.cgColor
+
+    }
+    @IBAction func tfChangeSize(_ sender: UITextField) {
+        if txtLineSize.text != "" {
+            lineSize =    CGFloat(Int(txtLineSize.text!)!)
+        }
+    }
+    @IBAction func tfTouchDown(_ sender: UITextField) {
+        txtLineSize.selectAll(UITextField.self)
+    }
+    @IBAction func tfDidEndOnExit(_ sender: UITextField) {
+        lineSize =    CGFloat(Int(txtLineSize.text!)!)
     }
 }
 
