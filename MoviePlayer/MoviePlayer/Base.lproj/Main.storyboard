@@ -36,7 +36,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Pc-bA-eWv">
-                                <rect key="frame" x="0.0" y="115" width="376" height="184"/>
+                                <rect key="frame" x="0.0" y="115" width="172" height="184"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="FastTyping.jpg"/>
                                 <connections>
@@ -44,11 +44,27 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tgl-52-gEQ">
-                                <rect key="frame" x="0.0" y="352" width="375" height="233"/>
+                                <rect key="frame" x="0.0" y="352" width="172" height="233"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Fireworks.jpg"/>
                                 <connections>
                                     <action selector="btnPlayExternalMovie:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XAt-4L-0lT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wmm-Bl-jKh">
+                                <rect key="frame" x="196" y="115" width="179" height="185"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="Mountaineering.jpg"/>
+                                <connections>
+                                    <action selector="btnMovPlayIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MH3-fx-ajy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5bo-i1-HEg">
+                                <rect key="frame" x="196" y="352" width="179" height="233"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="Seascape.jpg"/>
+                                <connections>
+                                    <action selector="btnMovPlayEx:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qqs-5z-wm3"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -63,5 +79,7 @@
     <resources>
         <image name="FastTyping.jpg" width="640" height="360"/>
         <image name="Fireworks.jpg" width="640" height="360"/>
+        <image name="Mountaineering.jpg" width="640" height="360"/>
+        <image name="Seascape.jpg" width="640" height="360"/>
     </resources>
 </document>
