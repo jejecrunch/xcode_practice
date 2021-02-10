@@ -113,6 +113,10 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DJc-nx-fd0">
+                                <rect key="frame" x="19" y="460" width="340" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
@@ -121,6 +125,7 @@
                         <outlet property="btnPlay" destination="1s2-cI-9RQ" id="O4p-M8-xp4"/>
                         <outlet property="btnRecord" destination="OXm-rH-Mx7" id="NGf-Xj-Dwh"/>
                         <outlet property="btnStop" destination="Gwz-3y-tUm" id="YVZ-Rz-rfz"/>
+                        <outlet property="imgView" destination="DJc-nx-fd0" id="0UU-DE-xWp"/>
                         <outlet property="lblCurrentTime" destination="K1w-1n-wrs" id="3g7-E0-3vD"/>
                         <outlet property="lblEndTime" destination="OE6-cV-WEE" id="koA-eA-cCM"/>
                         <outlet property="lblRecordTime" destination="Lc9-FO-Xrs" id="b2X-jV-BAG"/>
